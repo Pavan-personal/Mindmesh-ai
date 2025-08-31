@@ -335,7 +335,7 @@ npm run test:ipfs
 
 - **Issues**: GitHub Issues
 - **Discussions**: GitHub Discussions
-- **Twitter**: [Wiki](https://x.com/Mithabhashi__)
+- **Twitter**: [Mithabhashi__](https://x.com/Mithabhashi__)
 
 ---
 

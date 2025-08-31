@@ -41,31 +41,31 @@ const HowItWorksSection = () => {
   const steps = [
     {
       number: "01",
-      title: "Upload or Select Topic",
-      description: "Upload a PDF document or choose from our extensive list of topics and subtopics to focus your quiz.",
+      title: "Connect Wallet & Authenticate",
+      description: "Connect your Web3 wallet (MetaMask/Rainbow) to access the platform and authenticate securely.",
       delay: "0s",
-      icon: "📄"
+      icon: "🔐"
     },
     {
       number: "02",
-      title: "Customize Your Quiz",
-      description: "Set difficulty level, question types, number of questions, and create multiple sets if needed.",
+      title: "AI Generates Quiz Content",
+      description: "Upload PDFs or select topics. Our AI creates intelligent questions with multiple difficulty levels and question sets (A-G).",
       delay: "0.2s",
-      icon: "⚙️"
-    },
-    {
-      number: "03",
-      title: "AI Generates Questions",
-      description: "Our AI analyzes your content and creates relevant, challenging questions based on your specifications.",
-      delay: "0.4s",
       icon: "🧠"
     },
     {
+      number: "03",
+      title: "Blockchain VRF Selection",
+      description: "Verifiable Random Functions on Base Sepolia select fair question sets. Users pay gas fees for true randomness.",
+      delay: "0.4s",
+      icon: "⛓️"
+    },
+    {
       number: "04",
-      title: "Share & Analyze",
-      description: "Schedule the quiz, share the link with participants, and get detailed analytics on performance.",
+      title: "IPFS Storage & Results",
+      description: "Quiz attempts stored on IPFS via Pinata. Get scores, analytics, and permanent decentralized records.",
       delay: "0.6s",
-      icon: "📊"
+      icon: "🌐"
     }
   ];
 
@@ -155,7 +155,7 @@ const HowItWorksSection = () => {
             className="text-3xl md:text-4xl font-bold text-white font-space relative inline-block"
             whileHover={{ scale: 1.05 }}
           >
-            How <span className="text-stroke animate-glitch-slow">MindMesh</span> Works
+            Web3 <span className="text-stroke animate-glitch-slow">Quiz</span> Workflow
             <motion.div 
               className="absolute w-full h-1 bg-white bottom-0 left-0" 
               initial={{ scaleX: 0 }}
@@ -169,7 +169,7 @@ const HowItWorksSection = () => {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            Four simple steps to create professional quizzes in minutes instead of hours.
+            Experience the complete blockchain-powered quiz creation and attempt process.
           </motion.p>
         </motion.div>
         

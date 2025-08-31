@@ -51,7 +51,7 @@ const StatsSection = () => {
             className="text-3xl md:text-4xl font-bold text-white font-space"
             whileHover={{ scale: 1.05 }}
           >
-            Powerful <span className="animate-glitch-slow">Analytics</span> Dashboard
+            Web3 <span className="animate-glitch-slow">Platform</span> Metrics
           </motion.h2>
           <motion.p 
             className="mt-4 text-xl text-gray-400 max-w-3xl mx-auto"
@@ -59,7 +59,7 @@ const StatsSection = () => {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            Gain valuable insights into quiz performance and participant engagement.
+            Track blockchain transactions, IPFS storage, and AI-generated content performance.
           </motion.p>
         </motion.div>
         
@@ -82,25 +82,25 @@ const StatsSection = () => {
           animate={isInView ? "show" : "hidden"}
         >
           <StatCard 
-            title="Average Completion Rate" 
-            value={92} 
-            increase="↑ 12% from last month" 
+            title="VRF Transactions" 
+            value={2847} 
+            increase="↑ 156% from last month" 
             variants={itemVariants} 
             isInView={isInView} 
           />
           
           <StatCard 
-            title="Questions Generated" 
-            value={12543} 
-            increase="↑ 23% from last month" 
+            title="IPFS Storage (GB)" 
+            value={156} 
+            increase="↑ 89% from last month" 
             variants={itemVariants} 
             isInView={isInView} 
           />
           
           <StatCard 
-            title="Active Users" 
-            value={567} 
-            increase="↑ 8% from last month" 
+            title="Active Wallets" 
+            value={892} 
+            increase="↑ 34% from last month" 
             variants={itemVariants} 
             isInView={isInView} 
           />

@@ -17,33 +17,33 @@ const FeatureSection = () => {
   const features = [
     {
       icon: <FileText className="h-10 w-10 text-white" />,
-      title: "PDF Upload",
-      description: "Upload any PDF document and let AI extract the most important information to create relevant quiz questions."
+      title: "AI-Powered Generation",
+      description: "Advanced AI creates intelligent quiz questions from PDFs or topics with multiple difficulty levels and question sets."
     },
     {
-      icon: <GraduationCap className="h-10 w-10 text-white" />,
-      title: "Topic Selection",
-      description: "Choose from a wide range of topics and subtopics to create targeted quizzes for any subject area."
+      icon: <Award className="h-10 w-10 text-white" />,
+      title: "Blockchain VRF",
+      description: "Verifiable Random Functions ensure fair and transparent quiz set selection using Base Sepolia network."
     },
     {
-      icon: <Settings className="h-10 w-10 text-white" />,
-      title: "Customizable",
-      description: "Set difficulty levels, number of questions, question types, and create multiple quiz sets."
-    },
-    {
-      icon: <Share2 className="h-10 w-10 text-white" />,
-      title: "Easy Sharing",
-      description: "Schedule exams and share a unique link with participants to take the quiz from anywhere."
+      icon: <BookOpen className="h-10 w-10 text-white" />,
+      title: "IPFS Storage",
+      description: "Decentralized storage of quiz attempts and data using Pinata IPFS for permanent, censorship-resistant records."
     },
     {
       icon: <CheckCircle className="h-10 w-10 text-white" />,
-      title: "AI Accuracy",
-      description: "Our AI ensures questions are relevant, clear, and aligned with the learning objectives."
+      title: "Advanced Encryption",
+      description: "Blocklock + AES-256-GCM encryption ensures quiz security and prevents answer exposure to users."
+    },
+    {
+      icon: <Settings className="h-10 w-10 text-white" />,
+      title: "Smart Fallbacks",
+      description: "Robust fallback systems ensure quiz availability even if blockchain or encryption systems fail."
     },
     {
       icon: <Users className="h-10 w-10 text-white" />,
-      title: "Admin Analytics",
-      description: "Get detailed insights on participant performance, question difficulty, and engagement metrics."
+      title: "Web3 Integration",
+      description: "Seamless wallet connection, transaction management, and blockchain-based user authentication."
     }
   ];
 
@@ -98,6 +98,22 @@ const FeatureSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8 }}
         >
+          <motion.h2
+            className="text-4xl md:text-5xl font-bold text-white mb-6 font-space"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            Revolutionary Web3 Features
+          </motion.h2>
+          <motion.p
+            className="text-xl text-gray-300 max-w-3xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            Experience the future of education with blockchain-powered randomness, decentralized storage, and AI-driven content generation
+          </motion.p>
           <motion.h2 
             className="text-3xl md:text-4xl font-bold text-white font-space inline-block"
             whileHover={{ scale: 1.05 }}

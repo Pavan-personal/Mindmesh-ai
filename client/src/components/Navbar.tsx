@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { GraduationCap, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { GoogleLoginButton } from "./GoogleLoginButton";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,7 +41,7 @@ const Navbar = () => {
     }),
   };
 
-  const navItems = ["Features", "How It Works", "Statistics", "Try Now"];
+  const navItems = ["Features", "How It Works", "Tech Stack", "Statistics"];
 
   return (
     <nav
@@ -94,14 +95,19 @@ const Navbar = () => {
               transition={{ delay: 0.5, duration: 0.5 }}
               whileHover={{ scale: 1.05 }}
             >
-              <Button
-                variant="default"
-                className="bg-white text-black hover:bg-white/90 relative overflow-hidden group neo-brutalism"
-              >
-                <span className="relative z-10">Get Started</span>
-                <span className="absolute inset-0 w-full h-full bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></span>
-                <span className="absolute inset-0 w-full h-full bg-white/20 transform translate-x-full group-hover:translate-x-0 transition-transform duration-300"></span>
-              </Button>
+              <GoogleLoginButton
+                Element={({ onClick }) => (
+                  <Button
+                    onClick={onClick}
+                    variant="default"
+                    className="bg-white text-black hover:bg-white/90 relative overflow-hidden group neo-brutalism"
+                  >
+                    <span className="relative z-10">Get Started</span>
+                    <span className="absolute inset-0 w-full h-full bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></span>
+                    <span className="absolute inset-0 w-full h-full bg-white/20 transform translate-x-full group-hover:translate-x-0 transition-transform duration-300"></span>
+                  </Button>
+                )}
+              />
             </motion.div>
           </div>
 
@@ -150,13 +156,20 @@ const Navbar = () => {
             initial="closed"
             animate={isMenuOpen ? "open" : "closed"}
           >
-            <Button
-              variant="default"
-              className="w-full bg-white text-black hover:bg-white/90 neo-brutalism"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Get Started
-            </Button>
+            <GoogleLoginButton
+              Element={({ onClick }) => (
+                <Button
+                  variant="default"
+                  className="w-full bg-white text-black hover:bg-white/90 neo-brutalism"
+                  onClick={() => {
+                    onClick();
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  Get Started
+                </Button>
+              )}
+            />
           </motion.div>
         </div>
       </div>

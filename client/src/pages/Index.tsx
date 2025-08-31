@@ -3,7 +3,8 @@ import HeroSection from "@/components/HeroSection";
 import FeatureSection from "@/components/FeatureSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import StatsSection from "@/components/StatsSection";
-import TryNowSection from "@/components/TryNowSection";
+import TechStackSection from "@/components/TechStackSection";
+
 import { useEffect } from "react";
 
 const Banner = () => {
@@ -21,8 +22,9 @@ const Banner = () => {
       <HeroSection />
       <FeatureSection />
       <HowItWorksSection />
+      <TechStackSection />
       <StatsSection />
-      <TryNowSection />
+
     </div>
   );
 };
