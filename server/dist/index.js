@@ -63,9 +63,8 @@ app.use('/api/quiz', quiz_1.default);
 app.get("/protected", verifyToken_1.verifyToken, (req, res) => {
     res.json({ success: true, user: req.user });
 });
-// app.listen(PORT, () => {
-//   console.log(`Server running on port ${PORT}`);
-//   console.log(`Blocklock integration: Users pay their own gas fees`);
-//   console.log(`No server private key required`);
-// });
-exports.default = app;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+    console.log(`Blocklock integration: Users pay their own gas fees`);
+    console.log(`No server private key required`);
+});
