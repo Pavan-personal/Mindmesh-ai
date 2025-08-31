@@ -82,10 +82,8 @@ app.get(
   }
 );
 
-// app.listen(PORT, () => {
-//   console.log(`Server running on port ${PORT}`);
-//   console.log(`Blocklock integration: Users pay their own gas fees`);
-//   console.log(`No server private key required`);
-// });
-
-export default app;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+  console.log(`Blocklock integration: Users pay their own gas fees`);
+  console.log(`No server private key required`);
+});
