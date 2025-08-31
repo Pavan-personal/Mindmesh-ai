@@ -2,7 +2,7 @@
 
 A revolutionary quiz platform that combines AI-generated content with blockchain technology, featuring Verifiable Random Functions (VRF), IPFS storage, and advanced encryption systems.
 
-## 🌟 Features
+## Features
 
 - **AI-Generated Quizzes**: Dynamic quiz creation with AI-powered content generation
 - **Blockchain Integration**: VRF-based randomness for fair quiz set selection
@@ -12,7 +12,7 @@ A revolutionary quiz platform that combines AI-generated content with blockchain
 - **Fallback Systems**: Robust fallback mechanisms for reliability
 - **Modern UI/UX**: Beautiful, responsive interface with dark theme
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 ### Frontend (React + Vite + TypeScript)
 - **Framework**: React 18 with TypeScript
@@ -30,7 +30,7 @@ A revolutionary quiz platform that combines AI-generated content with blockchain
 - **API**: RESTful API with comprehensive endpoints
 - **VRF Integration**: Randomness-js library integration
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 18+ 
@@ -215,7 +215,7 @@ npm run dev
    - Score history and performance trends
    - IPFS data accessible for verification
 
-## 🔐 Security Features
+## Security Features
 
 ### Encryption Layers
 - **AES-256-GCM**: Military-grade encryption for quiz data
@@ -229,7 +229,7 @@ npm run dev
 - **Database Security**: Prisma ORM with parameterized queries
 - **Environment Variables**: Sensitive data protected from exposure
 
-## 🌐 Deployment
+## Deployment
 
 ### Frontend (Vercel)
 ```bash
@@ -251,32 +251,7 @@ vercel --prod
 3. **IPFS**: Configure Pinata API keys
 4. **Blockchain**: Set Alchemy API key and contract addresses
 
-## 🧪 Testing
-
-### Frontend Testing
-```bash
-cd client
-npm run test
-npm run test:coverage
-```
-
-### Backend Testing
-```bash
-cd server
-npm run test
-npm run test:integration
-```
-
-### Blockchain Testing
-```bash
-# Test VRF on Base Sepolia
-npm run test:vrf
-
-# Test contract interactions
-npm run test:contract
-```
-
-## 📊 Performance Metrics
+## Performance Metrics
 
 - **VRF Response Time**: ~2-3 blocks (Base Sepolia)
 - **Quiz Loading**: <500ms average
@@ -284,7 +259,7 @@ npm run test:contract
 - **Database Queries**: <100ms response time
 - **Frontend Build**: <60s optimized build time
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 1. **VRF Transaction Fails**:
@@ -302,19 +277,7 @@ npm run test:contract
    - Check network connectivity
    - Validate data format
 
-### Debug Mode
-```bash
-# Enable debug logging
-DEBUG=* npm run dev
-
-# Check blockchain status
-npm run check:blocks
-
-# Verify IPFS connectivity
-npm run test:ipfs
-```
-
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create feature branch
@@ -323,7 +286,7 @@ npm run test:ipfs
 5. Code review and merge
 
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Randomness-js**: For VRF implementation
 - **Pinata**: For IPFS storage services
@@ -331,7 +294,7 @@ npm run test:ipfs
 - **Shadcn/ui**: For beautiful UI components
 - **Vercel**: For deployment platform
 
-## 📞 Support
+## Support
 
 - **Issues**: GitHub Issues
 - **Discussions**: GitHub Discussions
