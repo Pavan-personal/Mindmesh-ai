@@ -12,6 +12,19 @@ A revolutionary quiz platform that combines AI-generated content with blockchain
 - **Fallback Systems**: Robust fallback mechanisms for reliability
 - **Modern UI/UX**: Beautiful, responsive interface with dark theme
 
+## Snaps
+
+<img width="670" alt="Screenshot 2025-09-01 at 2 53 27 AM" src="https://github.com/user-attachments/assets/9346356b-011e-41f5-9298-f23778ae9a5c" />
+
+<img width="670" alt="Screenshot 2025-09-01 at 2 36 47 AM" src="https://github.com/user-attachments/assets/f23cb4bb-eb7b-43c2-b1fa-bb938c6681f1" />
+
+<img width="670" alt="Screenshot 2025-09-01 at 2 37 17 AM" src="https://github.com/user-attachments/assets/ce30a509-0f07-4525-95b1-5c8b71a206c0" />
+
+<img width="670" alt="Screenshot 2025-09-01 at 2 37 36 AM" src="https://github.com/user-attachments/assets/a2fda726-288b-4a75-8c96-822227f11e23" />
+
+<img width="670" alt="Screenshot 2025-09-01 at 2 37 43 AM" src="https://github.com/user-attachments/assets/6c2f6500-67ed-4f30-92aa-eff4f28322b6" />
+
+
 ## Architecture Overview
 
 ### Frontend (React + Vite + TypeScript)
