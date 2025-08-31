@@ -1,4 +1,4 @@
-# 🧠 MindMesh QuizCraft - AI-Enhanced Blockchain Quiz Platform
+# MindMesh QuizCraft - AI-Enhanced Blockchain Quiz Platform
 
 A revolutionary quiz platform that combines AI-generated content with blockchain technology, featuring Verifiable Random Functions (VRF), IPFS storage, and advanced encryption systems.
 
