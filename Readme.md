@@ -12,8 +12,7 @@ A revolutionary quiz platform that combines AI-generated content with blockchain
 - **Fallback Systems**: Robust fallback mechanisms for reliability
 - **Modern UI/UX**: Beautiful, responsive interface with dark theme
 
-## Demo
-
+## Watch this YT video
 [![Mindmesh AI (YouTube)](https://img.youtube.com/vi/sah-6cwlvy0/0.jpg)](https://youtu.be/sah-6cwlvy0)
 
 ## Snaps
