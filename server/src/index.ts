@@ -31,6 +31,32 @@ app.use(
   })
 );
 
+// Health check endpoint for Vercel
+app.get("/health", (req: express.Request, res: express.Response) => {
+  res.json({
+    status: "healthy",
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime(),
+    environment: process.env.NODE_ENV || "development",
+    version: "1.0.0"
+  });
+});
+
+// API status endpoint
+app.get("/api/status", (req: express.Request, res: express.Response) => {
+  res.json({
+    success: true,
+    message: "MindMesh QuizCraft API is running",
+    timestamp: new Date().toISOString(),
+    endpoints: {
+      auth: "/auth/*",
+      quiz: "/api/quiz/*",
+      ai: "/api/generate-*",
+      utils: "/proxy-image"
+    }
+  });
+});
+
 app.post("/auth/google", googleAuthentication);
 app.post("/logout", logout);
 app.post("/auth/wallet", verifyToken, updateWallet);
