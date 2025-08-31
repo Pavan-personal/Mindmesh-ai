@@ -14,7 +14,7 @@ A revolutionary quiz platform that combines AI-generated content with blockchain
 
 ## Demo
 
-[![Demo](https://img.youtube.com/vi/aa_5ETcJYl7H6i8R/0.jpg)](https://www.youtube.com/watch?v=aa_5ETcJYl7H6i8R)
+[![Mindmesh AI (YouTube)](https://img.youtube.com/vi/sah-6cwlvy0/0.jpg)](https://youtu.be/sah-6cwlvy0)
 
 ## Snaps
 
