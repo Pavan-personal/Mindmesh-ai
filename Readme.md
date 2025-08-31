@@ -14,7 +14,7 @@ A revolutionary quiz platform that combines AI-generated content with blockchain
 
 ## Demo
 
-<iframe width="670" src="https://www.youtube.com/embed/sah-6cwlvy0?si=aa_5ETcJYl7H6i8R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Demo](https://img.youtube.com/vi/aa_5ETcJYl7H6i8R/0.jpg)](https://www.youtube.com/watch?v=aa_5ETcJYl7H6i8R)
 
 ## Snaps
 
