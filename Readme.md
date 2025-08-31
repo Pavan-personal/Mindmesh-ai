@@ -18,8 +18,6 @@ A revolutionary quiz platform that combines AI-generated content with blockchain
 
 ## Snaps
 
-<img width="670" alt="Screenshot 2025-09-01 at 2 53 27 AM" src="https://github.com/user-attachments/assets/9346356b-011e-41f5-9298-f23778ae9a5c" />
-
 <img width="670" alt="Screenshot 2025-09-01 at 2 36 47 AM" src="https://github.com/user-attachments/assets/f23cb4bb-eb7b-43c2-b1fa-bb938c6681f1" />
 
 <img width="670" alt="Screenshot 2025-09-01 at 2 37 17 AM" src="https://github.com/user-attachments/assets/ce30a509-0f07-4525-95b1-5c8b71a206c0" />
