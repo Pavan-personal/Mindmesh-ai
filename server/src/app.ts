@@ -32,7 +32,7 @@ app.use(
 );
 
 // Health check endpoint for Vercel
-app.get("/health", (req: express.Request, res: express.Response) => {
+app.get("/health", (_req: express.Request, res: express.Response) => {
   res.json({
     status: "healthy",
     timestamp: new Date().toISOString(),
@@ -43,7 +43,7 @@ app.get("/health", (req: express.Request, res: express.Response) => {
 });
 
 // API status endpoint
-app.get("/api/status", (req: express.Request, res: express.Response) => {
+app.get("/api/status", (_req: express.Request, res: express.Response) => {
   res.json({
     success: true,
     message: "MindMesh QuizCraft API is running",

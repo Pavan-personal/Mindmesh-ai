@@ -94,7 +94,7 @@ router.get('/user-quizzes', verifyToken, async (req: AuthenticatedRequest, res: 
 });
 
 // Get all public quizzes (for QuizPool)
-router.get('/all-quizzes', verifyToken, async (req: AuthenticatedRequest, res: Response): Promise<void> => {
+router.get('/all-quizzes', verifyToken, async (_req: AuthenticatedRequest, res: Response): Promise<void> => {
   try {
     const quizzes = await quizService.getAllQuizzes();
     res.json({ success: true, quizzes: quizzes });
@@ -341,7 +341,7 @@ router.get('/attempts/:walletAddress', async (req: Request, res: Response): Prom
 });
 
 // Get transaction price for blocklock encryption
-router.get('/transaction-price', verifyToken, async (req: AuthenticatedRequest, res: Response): Promise<void> => {
+router.get('/transaction-price', verifyToken, async (_req: AuthenticatedRequest, res: Response): Promise<void> => {
   try {
     const price = await blocklockService.calculateTransactionPrice();
     
