@@ -17,7 +17,7 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const CLIENT_URL = process.env.CLIENT_URL || "http://localhost:5173";
+const CLIENT_URL = process.env.CLIENT_URL;
 const upload = multer(); // memory storage
 
 app.use(express.json());
@@ -82,8 +82,10 @@ app.get(
   }
 );
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-  console.log(`Blocklock integration: Users pay their own gas fees`);
-  console.log(`No server private key required`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server running on port ${PORT}`);
+//   console.log(`Blocklock integration: Users pay their own gas fees`);
+//   console.log(`No server private key required`);
+// });
+
+export default app;
