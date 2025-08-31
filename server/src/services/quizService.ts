@@ -2,7 +2,7 @@ import { BlocklockService } from './blocklockService';
 import { EncryptionService } from './encryptionService';
 import { PrismaClient } from '@prisma/client';
 import { Blocklock } from 'blocklock-js';
-import { JsonRpcProvider, Contract } from 'ethers';
+import { JsonRpcProvider } from 'ethers';
 
 export class QuizService {
   private prisma: PrismaClient;
@@ -345,7 +345,7 @@ export class QuizService {
   }> {
     try {
       console.log(`🔓 Starting decryption for quiz: ${randomUID}`);
-
+      console.log(`🔓 User wallet address: ${userWalletAddress}`);
       // Get quiz from database
       const quiz = await this.prisma.quiz.findUnique({
         where: { randomUID }

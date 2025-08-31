@@ -33,24 +33,35 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "eslint . --ext .ts --fix",
+    "dev": "nodemon ./src/server.ts",
+    "vercel-build": "echo Done running vercel-build.",
     "start": "nodemon src/index.ts",
     "build": "rimraf dist && tsc",
     "ts.check": "tsc --project tsconfig.json",
     "add-build": "git add dist",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.ts",
-    "vercel-build": "npm run build",
     "postinstall": "prisma generate",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev"
   },
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "expressjs",
+    "starter-template",
+    "starter-kit",
+    "vercel",
+    "vercel-deployment",
+    "expressjs-typescript-starter",
+    "expressjs-vercel",
+    "expressjs-deployment"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pavan-personal/mindmesh-ai.git"
+  },
   "author": "",
   "license": "ISC",
-  "description": "",
-  "pre-commit": [
-    "ts.check",
-    "build",
-    "add-build"
-  ]
+  "description": ""
 }

@@ -44,7 +44,7 @@ export const getKeywords = async (
     }
 
     const data = await response.json();
-    const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+    const rawText = (data as any)?.candidates?.[0]?.content?.parts?.[0]?.text;
 
     let relatedKeywords;
     try {
@@ -149,7 +149,7 @@ export const pdfBasedGeneration = async (
 
     const data = await geminiRes.json();
 
-    const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+    const rawText = (data as any)?.candidates?.[0]?.content?.parts?.[0]?.text;
     const cleanedText = rawText?.replace(/```json|```/g, "").trim();
 
     let formattedJson;
@@ -204,7 +204,7 @@ export const topicBasedGeneration = async (
 
     const topicsText = topics.join(", ");
     const questionTypeText = ` in MCQ format only. Only single correct MCQs.`;
-
+    console.log("numQuestions", numQuestions);
     const customCommand = `Generate exactly 20 questions${questionTypeText} for the topics ${topicsText} with a difficulty level of ${
       difficulty === "mixed"
         ? "cover all kind of difficulty types including miscellaneous"
@@ -310,7 +310,7 @@ export const topicBasedGeneration = async (
     }
 
     const data = await response.json();
-    const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+    const rawText = (data as any)?.candidates?.[0]?.content?.parts?.[0]?.text;
 
     let questions;
     try {

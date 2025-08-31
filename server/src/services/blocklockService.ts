@@ -1,4 +1,3 @@
-import { Blocklock } from "blocklock-js";
 import { Provider, ethers } from "ethers";
 
 export class BlocklockService {

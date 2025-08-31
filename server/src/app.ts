@@ -87,3 +87,5 @@ app.listen(PORT, () => {
   console.log(`Blocklock integration: Users pay their own gas fees`);
   console.log(`No server private key required`);
 });
+
+export default app;
