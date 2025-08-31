@@ -12,6 +12,10 @@ A revolutionary quiz platform that combines AI-generated content with blockchain
 - **Fallback Systems**: Robust fallback mechanisms for reliability
 - **Modern UI/UX**: Beautiful, responsive interface with dark theme
 
+## Demo
+
+<iframe width="670" src="https://www.youtube.com/embed/sah-6cwlvy0?si=aa_5ETcJYl7H6i8R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Snaps
 
 <img width="670" alt="Screenshot 2025-09-01 at 2 53 27 AM" src="https://github.com/user-attachments/assets/9346356b-011e-41f5-9298-f23778ae9a5c" />
